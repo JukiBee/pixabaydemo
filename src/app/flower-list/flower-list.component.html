@@ -1,0 +1,12 @@
+<div style="margin: 15px">
+    <h3>Search image in pixabay</h3>
+    <input type="text" value="Red roses" #searchtxt />
+    <button (click)="getImage(searchtxt.value)" style="margin-left: 20px;" >Get Image</button>
+</div>
+<div *ngFor="let result of searchResult" style="margin-left: 15px;">
+    <img [src]="result.webformatURL" alt="Your image" style="display: block"/>
+    <!-- <p>{{result.webformatURL}}</p> -->
+    <br>
+    
+
+</div>
